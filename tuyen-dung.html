@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển dụng - HUDLAND JSC</title>
+    <meta name="description" content="Cơ hội nghề nghiệp tại HUDLAND - Gia nhập đội ngũ nhân sự chuyên nghiệp, kiến tạo không gian sống bền vững và giá trị phồn vinh.">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./component/components.js"></script>
+</head>
+
+<body>
+    <app-header></app-header>
+
+    <div class="page-hero">
+        <img src="./image/banner-tuyen-dung.jpg" alt="" class="w-100" fetchpriority="high">
+        <div class="hero-conent">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tuyển dụng HUDLAND</li>
+                    </ol>
+                </nav>
+                <h1>Tuyển dụng HUDLAND</h1>
+            </div>
+        </div>
+    </div>
+
+    <main class="careers-page">
+        <div class="careers-section">
+            <div class="container">
+                <div class="careers-header">
+                    <h2 class="careers-title">Vị trí tuyển dụng</h2>
+                    <form class="filter-form" role="search" onsubmit="return false;">
+                        <div class="dropdown filter-form__dropdown">
+                            <input type="hidden" name="location" value="" class="filter-form__hidden-val">
+                            <a href="javascript:void(0)" class="filter-form__select dropdown-toggle" id="locationFilterBtn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="filter-form__label">Địa điểm:</span>
+                                <span class="filter-form__val" id="selectedLocation">Tất cả</span>
+                                <i class="fa-solid fa-chevron-down filter-form__arrow"></i>
+                            </a>
+                            <div class="dropdown-menu filter-form__menu" aria-labelledby="locationFilterBtn">
+                                <a class="dropdown-item filter-form__item active" href="javascript:void(0)" data-value="">Tất cả</a>
+                                <a class="dropdown-item filter-form__item" href="javascript:void(0)" data-value="Hà Nội">Hà Nội</a>
+                                <a class="dropdown-item filter-form__item" href="javascript:void(0)" data-value="Yên Bái">Yên Bái</a>
+                                <a class="dropdown-item filter-form__item" href="javascript:void(0)" data-value="Bắc Ninh">Bắc Ninh</a>
+                            </div>
+                        </div>
+
+                        <div class="filter-form__search">
+                            <i class="fa-regular fa-magnifying-glass filter-form__search-icon"></i>
+                            <input type="text" name="keyword" class="filter-form__input" placeholder="Tìm theo từ khóa">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row row--gap-24">
+                    <div class="col-12 col-lg-6 careers-col">
+                        <article class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">
+                                    <a href="./chi-tiet-tuyen-dung.html">Kỹ sư kinh tế xây dựng</a>
+                                </h3>
+                                <div class="career-card__location">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Hà Nội</span>
+                                </div>
+                            </div>
+                            <div class="career-card__info">
+                                <div class="career-card__info-row">
+                                    <div class="career-card__info-item">
+                                        <span class="career-card__info-label">Số lượng:</span>
+                                        <span class="career-card__info-val">2 Người</span>
+                                    </div>
+                                    <div class="career-card__info-item">
+                                        <span class="career-card__info-label">Hình thức:</span>
+                                        <span class="career-card__info-val">Toàn thời gian</span>
+                                    </div>
+                                </div>
+                                <div class="career-card__info-item">
+                                    <span class="career-card__info-label">Kinh nghiệm:</span>
+                                    <span class="career-card__info-val">> 3 Năm</span>
+                                </div>
+                                <div class="career-card__info-item">
+                                    <span class="career-card__info-label">Mức lương:</span>
+                                    <span class="career-card__info-val">15.000.000VNĐ - 18.000.000VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="career-card__footer">
+                                <span class="career-card__deadline">Hạn ứng tuyển: 31/12/2026</span>
+                                <a href="./chi-tiet-tuyen-dung.html" class="career-card__link">
+                                    <span>Xem chi tiết</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-lg-6 careers-col">
+                        <article class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">
+                                    <a href="./chi-tiet-tuyen-dung.html">KIẾN TRÚC SƯ</a>
+                                </h3>
+                                <div class="career-card__location">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Hà Nội</span>
+                                </div>
+                            </div>
+                            <div class="career-card__info">
+                                <div class="career-card__info-row">
+                                    <div class="career-card__info-item">
+                                        <span class="career-card__info-label">Số lượng:</span>
+                                        <span class="career-card__info-val">2 Người</span>
+                                    </div>
+                                    <div class="career-card__info-item">
+                                        <span class="career-card__info-label">Hình thức:</span>
+                                        <span class="career-card__info-val">Toàn thời gian</span>
+                                    </div>
+                                </div>
+                                <div class="career-card__info-item">
+                                    <span class="career-card__info-label">Kinh nghiệm:</span>
+                                    <span class="career-card__info-val">> 3 Năm</span>
+                                </div>
+                                <div class="career-card__info-item">
+                                    <span class="career-card__info-label">Mức lương:</span>
+                                    <span class="career-card__info-val">15.000.000VNĐ - 18.000.000VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="career-card__footer">
+                                <span class="career-card__deadline">Hạn ứng tuyển: 31/12/2026</span>
+                                <a href="./chi-tiet-tuyen-dung.html" class="career-card__link">
+                                    <span>Xem chi tiết</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-lg-6 careers-col">
+                        <article class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">
+                                    <a href="./chi-tiet-tuyen-dung.html">KỸ SƯ ĐIỆN</a>
+                                </h3>
+                                <div class="career-card__location">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Hà Nội</span>
+                                </div>
+                            </div>
+                            <div class="career-card__info">
+                                <div class="career-card__info-row">
+                                    <div class="career-card__info-item">
+                                        <span class="career-card__info-label">Số lượng:</span>
+                                        <span class="career-card__info-val">2 Người</span>
+                                    </div>
+                                    <div class="career-card__info-item">
+                                        <span class="career-card__info-label">Hình thức:</span>
+                                        <span class="career-card__info-val">Toàn thời gian</span>
+                                    </div>
+                                </div>
+                                <div class="career-card__info-item">
+                                    <span class="career-card__info-label">Kinh nghiệm:</span>
+                                    <span class="career-card__info-val">> 3 Năm</span>
+                                </div>
+                                <div class="career-card__info-item">
+                                    <span class="career-card__info-label">Mức lương:</span>
+                                    <span class="career-card__info-val">15.000.000VNĐ - 18.000.000VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="career-card__footer">
+                                <span class="career-card__deadline">Hạn ứng tuyển: 31/12/2026</span>
+                                <a href="./chi-tiet-tuyen-dung.html" class="career-card__link">
+                                    <span>Xem chi tiết</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-lg-6 careers-col">
+                        <article class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">
+                                    <a href="./chi-tiet-tuyen-dung.html">Kỹ sư HẠ TẦNG ĐÔ THỊ</a>
+                                </h3>
+                                <div class="career-card__location">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Hà Nội</span>
+                                </div>
+                            </div>
+                            <div class="career-card__info">
+                                <div class="career-card__info-row">
+                                    <div class="career-card__info-item">
+                                        <span class="career-card__info-label">Số lượng:</span>
+                                        <span class="career-card__info-val">2 Người</span>
+                                    </div>
+                                    <div class="career-card__info-item">
+                                        <span class="career-card__info-label">Hình thức:</span>
+                                        <span class="career-card__info-val">Toàn thời gian</span>
+                                    </div>
+                                </div>
+                                <div class="career-card__info-item">
+                                    <span class="career-card__info-label">Kinh nghiệm:</span>
+                                    <span class="career-card__info-val">> 3 Năm</span>
+                                </div>
+                                <div class="career-card__info-item">
+                                    <span class="career-card__info-label">Mức lương:</span>
+                                    <span class="career-card__info-val">15.000.000VNĐ - 18.000.000VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="career-card__footer">
+                                <span class="career-card__deadline">Hạn ứng tuyển: 31/12/2026</span>
+                                <a href="./chi-tiet-tuyen-dung.html" class="career-card__link">
+                                    <span>Xem chi tiết</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-lg-6 careers-col">
+                        <article class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">
+                                    <a href="./chi-tiet-tuyen-dung.html">Kỹ sư kinh tế xây dựng</a>
+                                </h3>
+                                <div class="career-card__location">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Hà Nội</span>
+                                </div>
+                            </div>
+                            <div class="career-card__info">
+                                <div class="career-card__info-row">
+                                    <div class="career-card__info-item">
+                                        <span class="career-card__info-label">Số lượng:</span>
+                                        <span class="career-card__info-val">2 Người</span>
+                                    </div>
+                                    <div class="career-card__info-item">
+                                        <span class="career-card__info-label">Hình thức:</span>
+                                        <span class="career-card__info-val">Toàn thời gian</span>
+                                    </div>
+                                </div>
+                                <div class="career-card__info-item">
+                                    <span class="career-card__info-label">Kinh nghiệm:</span>
+                                    <span class="career-card__info-val">> 3 Năm</span>
+                                </div>
+                                <div class="career-card__info-item">
+                                    <span class="career-card__info-label">Mức lương:</span>
+                                    <span class="career-card__info-val">15.000.000VNĐ - 18.000.000VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="career-card__footer">
+                                <span class="career-card__deadline">Hạn ứng tuyển: 31/12/2026</span>
+                                <a href="./chi-tiet-tuyen-dung.html" class="career-card__link">
+                                    <span>Xem chi tiết</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-lg-6 careers-col">
+                        <article class="career-card">
+                            <div class="career-card__header">
+                                <h3 class="career-card__title">
+                                    <a href="./chi-tiet-tuyen-dung.html">Kỹ sư kinh tế xây dựng</a>
+                                </h3>
+                                <div class="career-card__location">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Hà Nội</span>
+                                </div>
+                            </div>
+                            <div class="career-card__info">
+                                <div class="career-card__info-row">
+                                    <div class="career-card__info-item">
+                                        <span class="career-card__info-label">Số lượng:</span>
+                                        <span class="career-card__info-val">2 Người</span>
+                                    </div>
+                                    <div class="career-card__info-item">
+                                        <span class="career-card__info-label">Hình thức:</span>
+                                        <span class="career-card__info-val">Toàn thời gian</span>
+                                    </div>
+                                </div>
+                                <div class="career-card__info-item">
+                                    <span class="career-card__info-label">Kinh nghiệm:</span>
+                                    <span class="career-card__info-val">> 3 Năm</span>
+                                </div>
+                                <div class="career-card__info-item">
+                                    <span class="career-card__info-label">Mức lương:</span>
+                                    <span class="career-card__info-val">15.000.000VNĐ - 18.000.000VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="career-card__footer">
+                                <span class="career-card__deadline">Hạn ứng tuyển: 31/12/2026</span>
+                                <a href="./chi-tiet-tuyen-dung.html" class="career-card__link">
+                                    <span>Xem chi tiết</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <ul class="pagination">
+                    <li class="pagination__item pagination__item--control pagination__item--prev">
+                        <a href="javascript:void(0)" class="pagination__link" aria-label="Trang trước">
+                            <i class="fa-solid fa-angles-left"></i>
+                        </a>
+                    </li>
+                    <li class="pagination__item pagination__item--active">
+                        <a href="javascript:void(0)" class="pagination__link">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="javascript:void(0)" class="pagination__link">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="javascript:void(0)" class="pagination__link">3</a>
+                    </li>
+                    <li class="pagination__item pagination__item--dots">
+                        <span class="pagination__dots">...</span>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="javascript:void(0)" class="pagination__link">4</a>
+                    </li>
+                    <li class="pagination__item pagination__item--control pagination__item--next">
+                        <a href="javascript:void(0)" class="pagination__link" aria-label="Trang tiếp">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="culture-section">
+            <div class="container">
+                <div class="culture-block">
+                    <div class="row align-items-start">
+                        <div class="col-12 col-lg-5 culture__col-media">
+                            <div class="culture-media">
+                                <img src="./image/chinh-sach-nhan-su.webp" alt="Chính sách nhân sự" class="img-fluid w-100" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7 culture__col-content">
+                            <div class="culture-content">
+                                <h2 class="culture-title">Chính sách nhân sự</h2>
+                                <div class="culture-desc">
+                                    Tập đoàn HUDLAND luôn chú trọng xây dựng chính sách nhân sự lấy con người làm nền tảng cho sự phát triển bền vững. Với định hướng tạo dựng môi trường làm việc chuyên nghiệp, năng động và thân thiện, HUDLAND quan tâm đến việc thu hút, đào tạo và phát triển đội ngũ nhân sự có năng lực, trách nhiệm và tinh thần sáng tạo. Tập đoàn đề cao sự công bằng trong tuyển dụng, đánh giá và đãi ngộ, đồng thời tạo điều kiện để mỗi cán bộ, nhân viên phát huy thế mạnh, nâng cao chuyên môn và phát triển sự nghiệp. Thông qua việc xây dựng văn hóa doanh nghiệp tích cực, khuyến khích tinh thần hợp tác và gắn kết, HUDLAND hướng tới hình thành đội ngũ nhân sự chất lượng cao, đồng hành cùng tập đoàn trong việc nâng cao hiệu quả hoạt động và kiến tạo những giá trị bền vững cho khách hàng, đối tác và cộng đồng.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="culture-block culture-block--reverse">
+                    <div class="row align-items-start flex-lg-row-reverse">
+                        <div class="col-12 col-lg-5 culture__col-media">
+                            <div class="culture-media">
+                                <img src="./image/moi-truong-lam-viec.webp" alt="Môi trường làm việc" class="img-fluid w-100" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7 culture__col-content">
+                            <div class="culture-content">
+                                <h2 class="culture-title">Môi trường làm việc</h2>
+                                <div class="culture-desc">
+                                    Tập đoàn HUDLAND hướng đến xây dựng môi trường làm việc chuyên nghiệp, năng động và thân thiện, nơi mỗi cán bộ, nhân viên đều có cơ hội phát huy năng lực, sáng tạo và phát triển bản thân. Với văn hóa doanh nghiệp đề cao tinh thần trách nhiệm, sự hợp tác và tính chủ động, HUDLAND khuyến khích mỗi cá nhân không ngừng học hỏi, nâng cao chuyên môn và đóng góp vào mục tiêu chung của tập đoàn. Đồng thời, HUDLAND chú trọng xây dựng môi trường làm việc gắn kết, tôn trọng sự khác biệt và tạo điều kiện để nhân viên phát triển sự nghiệp lâu dài. Đây là nền tảng quan trọng giúp tập đoàn nâng cao hiệu quả hoạt động, xây dựng đội ngũ vững mạnh và hướng tới những giá trị phát triển bền vững.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="training-section">
+            <div class="container">
+                <h2 class="training-title">Đào tạo và phát triển nhân sự</h2>
+                <div class="training-list">
+                    <div class="training-item">
+                        <div class="training-item__title-col">
+                            <h3 class="training-item__title">Chế độ đãi ngộ và chính sách phúc lợi</h3>
+                        </div>
+                        <div class="training-item__desc-col">
+                            <div class="training-item__desc">
+                                HUDLAND chú trọng xây dựng chính sách đãi ngộ và phúc lợi nhằm đảm bảo quyền lợi, tạo động lực và khuyến khích nhân viên gắn bó lâu dài. Tập đoàn hướng đến chế độ lương thưởng cạnh tranh, đánh giá công bằng theo năng lực và hiệu quả công việc, đồng thời quan tâm đến các quyền lợi bảo hiểm, nghỉ phép và hoạt động chăm sóc đời sống nhân viên.
+                            </div>
+                        </div>
+                        <div class="training-item__media-col">
+                            <div class="training-item__media">
+                                <img src="./image/dao-tao-1.webp" alt="Chế độ đãi ngộ và chính sách phúc lợi" class="img-fluid w-100" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training-item">
+                        <div class="training-item__title-col">
+                            <h3 class="training-item__title">Chính sách lương, thưởng hấp dẫn</h3>
+                        </div>
+                        <div class="training-item__desc-col">
+                            <div class="training-item__desc">
+                                HUDLAND xây dựng chính sách lương thưởng minh bạch, công bằng và cạnh tranh, gắn liền với năng lực, vị trí và hiệu quả công việc của mỗi nhân viên. Chú trọng ghi nhận những đóng góp tích cực, khuyến khích tinh thần sáng tạo và tạo động lực để đội ngũ không ngừng nâng cao hiệu suất, đồng hành cùng sự phát triển bền vững của doanh nghiệp.
+                            </div>
+                        </div>
+                        <div class="training-item__media-col">
+                            <div class="training-item__media">
+                                <img src="./image/dao-tao-2.webp" alt="Chính sách lương, thưởng hấp dẫn" class="img-fluid w-100" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="training-item">
+                        <div class="training-item__title-col">
+                            <h3 class="training-item__title">Cơ hội thăng tiến và phát triển nghề nghiệp</h3>
+                        </div>
+                        <div class="training-item__desc-col">
+                            <div class="training-item__desc">
+                                HUDLAND tạo điều kiện để mỗi nhân viên phát huy năng lực, nâng cao chuyên môn và phát triển sự nghiệp thông qua các cơ hội đào tạo, học hỏi và trải nghiệm thực tế. Đề cao năng lực, tinh thần trách nhiệm và hiệu quả công việc, lộ trình thăng tiến rõ ràng, giúp nhân viên khẳng định giá trị bản thân và đồng hành cùng sự phát triển lâu dài của doanh nghiệp.
+                            </div>
+                        </div>
+                        <div class="training-item__media-col">
+                            <div class="training-item__media">
+                                <img src="./image/dao-tao-3.webp" alt="Cơ hội thăng tiến và phát triển nghề nghiệp" class="img-fluid w-100" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <app-footer></app-footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

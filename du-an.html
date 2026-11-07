@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự án - HUDLAND JSC</title>
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./component/components.js"></script>
+</head>
+
+<body>
+    <app-header></app-header>
+
+    <div class="page-hero">
+        <img src="./image/banner-du-an.jpg" alt="" class="w-100" fetchpriority="high">
+        <div class="hero-conent">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Dự án</li>
+                    </ol>
+                </nav>
+                <h1>Dự án</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-filter">
+        <div class="container">
+            <div class="projects-filter__nav">
+                <a href="javascript:void(0)" class="projects-filter__tab projects-filter__tab--active" data-filter="all">Tất cả dự án</a>
+                <a href="javascript:void(0)" class="projects-filter__tab" data-filter="urban">BDS Đô thị</a>
+                <a href="javascript:void(0)" class="projects-filter__tab" data-filter="resort">BDS Nghỉ dưỡng</a>
+                <a href="javascript:void(0)" class="projects-filter__tab" data-filter="social">BDS An sinh xã hội</a>
+                <a href="javascript:void(0)" class="projects-filter__tab" data-filter="apartment">Chung cư</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-page">
+        <div class="container">
+            <div class="row projects-row">
+                <div class="col-12 col-lg-8 projects-col--large">
+                    <div class="project-card">
+                        <a href="./chi-tiet-du-an.html" class="project-card__media">
+                            <span class="project-card__badge project-card__badge--pending">Chưa tiến hành</span>
+                            <img src="./image/du-an-1.jpg"
+                                alt="Dự án nhà ở hỗn hợp NO-05B(Palm Garden)-KĐTM Việt Hưng- Long Biên- Hà Nội"
+                                class="project-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">
+                                <a href="./chi-tiet-du-an.html">Dự án nhà ở hỗn hợp NO-05B(Palm Garden)-KĐTM Việt Hưng- Long
+                                    Biên- Hà Nội</a>
+                            </h3>
+                            <div class="project-card__location">
+                                <span class="project-card__location-icon" aria-hidden="true">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                                </span>
+                                <span class="project-card__location-text">Hà Nội</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 projects-col--small">
+                    <div class="project-card">
+                        <a href="./chi-tiet-du-an.html" class="project-card__media">
+                            <span class="project-card__badge project-card__badge--ongoing">Đang tiến hành</span>
+                            <img src="./image/du-an-2.jpg"
+                                alt="Dự án chung cư cao tầng CT17(Green House)- Khu đô thị mới Việt Hưng- quận Long Biên- Hà Nội"
+                                class="project-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">
+                                <a href="./chi-tiet-du-an.html">Dự án chung cư cao tầng CT17(Green House)- Khu đô thị mới
+                                    Việt Hưng- quận Long Biên- Hà Nội</a>
+                            </h3>
+                            <div class="project-card__location">
+                                <span class="project-card__location-icon" aria-hidden="true">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                                </span>
+                                <span class="project-card__location-text">Hà Nội</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row projects-row">
+                <div class="col-12 col-lg-4 projects-col--small">
+                    <div class="project-card">
+                        <a href="./chi-tiet-du-an.html" class="project-card__media">
+                            <span class="project-card__badge project-card__badge--completed">Đã hoàn thành</span>
+                            <img src="./image/du-an-3.jpg"
+                                alt="Dự án chung cư cao tầng CT17(Green House)- Khu đô thị mới Việt Hưng- quận Long Biên- Hà Nội"
+                                class="project-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">
+                                <a href="./chi-tiet-du-an.html">Dự án chung cư cao tầng CT17(Green House)- Khu đô thị mới
+                                    Việt Hưng- quận Long Biên- Hà Nội</a>
+                            </h3>
+                            <div class="project-card__location">
+                                <span class="project-card__location-icon" aria-hidden="true">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                                </span>
+                                <span class="project-card__location-text">Bắc Ninh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 projects-col--large">
+                    <div class="project-card">
+                        <a href="./chi-tiet-du-an.html" class="project-card__media">
+                            <span class="project-card__badge project-card__badge--completed">Đã hoàn thành</span>
+                            <img src="./image/du-an-4.jpg"
+                                alt="Dự án cây xanh thể dục thể thao thành phố CV02- KĐT mới Việt Hưng- Long Biên - Hà Nội"
+                                class="project-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">
+                                <a href="./chi-tiet-du-an.html">Dự án cây xanh thể dục thể thao thành phố CV02- KĐT mới Việt
+                                    Hưng- Long Biên - Hà Nội</a>
+                            </h3>
+                            <div class="project-card__location">
+                                <span class="project-card__location-icon" aria-hidden="true">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                                </span>
+                                <span class="project-card__location-text">Hà Nội</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row projects-row">
+                <div class="col-12 col-lg-8 projects-col--large">
+                    <div class="project-card">
+                        <a href="./chi-tiet-du-an.html" class="project-card__media">
+                            <span class="project-card__badge project-card__badge--ongoing">Đang tiến hành</span>
+                            <img src="./image/du-an-5.jpg"
+                                alt="Dự án nhà liên kế và nhà biệt thự Khu A- Khu đô thị mới Lê Thái Tổ- thành phố Bắc Ninh"
+                                class="project-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">
+                                <a href="./chi-tiet-du-an.html">Dự án nhà liên kế và nhà biệt thự Khu A- Khu đô thị mới Lê
+                                    Thái Tổ- thành phố Bắc Ninh</a>
+                            </h3>
+                            <div class="project-card__location">
+                                <span class="project-card__location-icon" aria-hidden="true">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                                </span>
+                                <span class="project-card__location-text">Bắc Ninh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 projects-col--small">
+                    <div class="project-card">
+                        <a href="./chi-tiet-du-an.html" class="project-card__media">
+                            <span class="project-card__badge project-card__badge--completed">Đã hoàn thành</span>
+                            <img src="./image/du-an-6.jpg"
+                                alt="Dự án Khu B kđt mới đường Lê Thái tổ Bắc Ninh- Nhà ở xã hội"
+                                class="project-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">
+                                <a href="./chi-tiet-du-an.html">Dự án Khu B kđt mới đường Lê Thái tổ Bắc Ninh- Nhà ở xã hội</a>
+                            </h3>
+                            <div class="project-card__location">
+                                <span class="project-card__location-icon" aria-hidden="true">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                                </span>
+                                <span class="project-card__location-text">Bắc Ninh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row projects-row">
+                <div class="col-12 col-lg-4 projects-col--small">
+                    <div class="project-card">
+                        <a href="./chi-tiet-du-an.html" class="project-card__media">
+                            <span class="project-card__badge project-card__badge--completed">Đã hoàn thành</span>
+                            <img src="./image/du-an-7.jpg" alt="Dự án Bình Giang - Hải Dương"
+                                class="project-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">
+                                <a href="./chi-tiet-du-an.html">Dự án Bình Giang - Hải Dương</a>
+                            </h3>
+                            <div class="project-card__location">
+                                <span class="project-card__location-icon" aria-hidden="true">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                                </span>
+                                <span class="project-card__location-text">Hải Dương</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 projects-col--large">
+                    <div class="project-card">
+                        <a href="./chi-tiet-du-an.html" class="project-card__media">
+                            <span class="project-card__badge project-card__badge--completed">Đã hoàn thành</span>
+                            <img src="./image/du-an-8.jpg" alt="Dự án Đồng Tâm - Yên Bái"
+                                class="project-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">
+                                <a href="./chi-tiet-du-an.html">Dự án Đồng Tâm - Yên Bái</a>
+                            </h3>
+                            <div class="project-card__location">
+                                <span class="project-card__location-icon" aria-hidden="true">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                                </span>
+                                <span class="project-card__location-text">Yên Bái</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row projects-row">
+                <div class="col-12 col-lg-8 projects-col--large">
+                    <div class="project-card">
+                        <a href="./chi-tiet-du-an.html" class="project-card__media">
+                            <span class="project-card__badge project-card__badge--completed">Đã hoàn thành</span>
+                            <img src="./image/du-an-9.jpg" alt="Dự án Phúc Xuyên – Niềm xá-Bắc Ninh"
+                                class="project-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">
+                                <a href="./chi-tiet-du-an.html">Dự án Phúc Xuyên – Niềm xá-Bắc Ninh</a>
+                            </h3>
+                            <div class="project-card__location">
+                                <span class="project-card__location-icon" aria-hidden="true">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                                </span>
+                                <span class="project-card__location-text">Bắc Ninh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 projects-col--small">
+                    <div class="project-card">
+                        <a href="./chi-tiet-du-an.html" class="project-card__media">
+                            <span class="project-card__badge project-card__badge--completed">Đã hoàn thành</span>
+                            <img src="./image/du-an-10.jpg"
+                                alt="Dự án nhà liền kề LK27 và nhà biệt thự BT8- Khu đô thị mới Vân Canh-Hoài Đức-Hà Nội"
+                                class="project-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">
+                                <a href="./chi-tiet-du-an.html">Dự án nhà liền kề LK27 và nhà biệt thự BT8- Khu đô thị mới
+                                    Vân Canh-Hoài Đức-Hà Nội</a>
+                            </h3>
+                            <div class="project-card__location">
+                                <span class="project-card__location-icon" aria-hidden="true">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                                </span>
+                                <span class="project-card__location-text">Hà Nội</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row projects-row">
+                <div class="col-12 col-lg-4 projects-col--small">
+                    <div class="project-card">
+                        <a href="./chi-tiet-du-an.html" class="project-card__media">
+                            <span class="project-card__badge project-card__badge--completed">Đã hoàn thành</span>
+                            <img src="./image/du-an-11.jpg" alt="Dự án Văn phòng cho thuê CC7- Linh Đàm"
+                                class="project-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">
+                                <a href="./chi-tiet-du-an.html">Dự án Văn phòng cho thuê CC7- Linh Đàm</a>
+                            </h3>
+                            <div class="project-card__location">
+                                <span class="project-card__location-icon" aria-hidden="true">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                                </span>
+                                <span class="project-card__location-text">Hà Nội</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 projects-col--large">
+                    <div class="project-card">
+                        <a href="./chi-tiet-du-an.html" class="project-card__media">
+                            <span class="project-card__badge project-card__badge--completed">Đã hoàn thành</span>
+                            <img src="./image/du-an-12.jpg" alt="Dự án Phúc Xuyên – Niềm xá-Bắc Ninh"
+                                class="project-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">
+                                <a href="./chi-tiet-du-an.html">Dự án Phúc Xuyên – Niềm xá-Bắc Ninh</a>
+                            </h3>
+                            <div class="project-card__location">
+                                <span class="project-card__location-icon" aria-hidden="true">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i>
+                                </span>
+                                <span class="project-card__location-text">Bắc Ninh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

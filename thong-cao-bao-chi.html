@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonia Yên Bái - HUDLAND JSC</title>
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./component/components.js"></script>
+</head>
+
+<body>
+    <app-header></app-header>
+
+    <div class="page-hero">
+        <img src="./image/tin-tuc-banner.jpg" alt="" class="w-100" fetchpriority="high">
+        <div class="hero-conent">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="./tin-tuc.html">Tin tức</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Thông cáo báo chí</li>
+                    </ol>
+                </nav>
+                <h1>Thông cáo báo chí</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="news-listing" id="newsListing">
+        <div class="container">
+            <div class="news-listing__header">
+                <h2 class="news-listing__title">Danh sách tin tức</h2>
+                <form class="filter-form" role="search" onsubmit="return false;">
+                    <div class="dropdown filter-form__dropdown">
+                        <input type="hidden" name="sort" value="latest" class="filter-form__hidden-val">
+                        <a href="javascript:void(0)" class="filter-form__select dropdown-toggle" id="sortFilterBtn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="filter-form__label">Sắp xếp theo:</span>
+                            <span class="filter-form__val">Mới nhất</span>
+                            <i class="fa-solid fa-chevron-down filter-form__arrow"></i>
+                        </a>
+                        <div class="dropdown-menu filter-form__menu" aria-labelledby="sortFilterBtn">
+                            <a class="dropdown-item filter-form__item active" href="javascript:void(0)" data-value="latest">Mới nhất</a>
+                            <a class="dropdown-item filter-form__item" href="javascript:void(0)" data-value="oldest">Cũ nhất</a>
+                        </div>
+                    </div>
+                    <div class="filter-form__search">
+                        <i class="fa-solid fa-magnifying-glass filter-form__search-icon"></i>
+                        <input type="text" name="keyword" class="filter-form__input" placeholder="Tìm theo từ khóa">
+                    </div>
+                </form>
+            </div>
+
+            <div class="row news-listing__row">
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-1.jpg"
+                                alt="HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương hiệu mạnh"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Sự kiện HUDLAND</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương
+                                    hiệu mạnh</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-2.jpg"
+                                alt="HUDLAND Đạt Top 10 Nhà Phát Triển Bất Động Sản Uy Tín Hàng Đầu Việt Nam, Khẳng Định Vị Thế Trên Thị Trường"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Sự kiện HUDLAND</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND Đạt Top 10 Nhà Phát Triển Bất Động Sản Uy Tín Hàng Đầu Việt Nam,
+                                    Khẳng Định Vị Thế Trên Thị Trường</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-3.jpg"
+                                alt="HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương hiệu mạnh"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Sự kiện HUDLAND</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương
+                                    hiệu mạnh</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-1.jpg"
+                                alt="HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương hiệu mạnh"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Thông cáo báo chí</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương
+                                    hiệu mạnh</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-2.jpg"
+                                alt="HUDLAND Đạt Top 10 Nhà Phát Triển Bất Động Sản Uy Tín Hàng Đầu Việt Nam, Khẳng Định Vị Thế Trên Thị Trường"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Thông cáo báo chí</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND Đạt Top 10 Nhà Phát Triển Bất Động Sản Uy Tín Hàng Đầu Việt Nam,
+                                    Khẳng Định Vị Thế Trên Thị Trường</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-3.jpg"
+                                alt="HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương hiệu mạnh"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Thông cáo báo chí</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương
+                                    hiệu mạnh</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-1.jpg"
+                                alt="Thông báo Việc mở bán, cho thuê, cho thuê mua tại dự án đầu tư xây dựng Nhà ở thu nhập..."
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Thị trường BDS</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">Thông báo Việc mở bán, cho thuê, cho thuê mua tại dự án đầu tư xây dựng Nhà
+                                    ở thu nhập...</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-2.jpg"
+                                alt="HUDLAND Đạt Top 10 Nhà Phát Triển Bất Động Sản Uy Tín Hàng Đầu Việt Nam, Khẳng Định Vị Thế Trên Thị Trường"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Thị trường BDS</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND Đạt Top 10 Nhà Phát Triển Bất Động Sản Uy Tín Hàng Đầu Việt Nam,
+                                    Khẳng Định Vị Thế Trên Thị Trường</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-3.jpg"
+                                alt="HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương hiệu mạnh"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Thị trường BDS</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương
+                                    hiệu mạnh</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-1.jpg"
+                                alt="HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương hiệu mạnh"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Thông tin đấu thầu</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương
+                                    hiệu mạnh</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-2.jpg"
+                                alt="HUDLAND Đạt Top 10 Nhà Phát Triển Bất Động Sản Uy Tín Hàng Đầu Việt Nam, Khẳng Định Vị Thế Trên Thị Trường"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Thông tin đấu thầu</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND Đạt Top 10 Nhà Phát Triển Bất Động Sản Uy Tín Hàng Đầu Việt Nam,
+                                    Khẳng Định Vị Thế Trên Thị Trường</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-3.jpg"
+                                alt="HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương hiệu mạnh"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Thông tin đấu thầu</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương
+                                    hiệu mạnh</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-1.jpg"
+                                alt="HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương hiệu mạnh"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Sự kiện HUDLAND</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương
+                                    hiệu mạnh</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-2.jpg"
+                                alt="HUDLAND Đạt Top 10 Nhà Phát Triển Bất Động Sản Uy Tín Hàng Đầu Việt Nam, Khẳng Định Vị Thế Trên Thị Trường"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Sự kiện HUDLAND</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND Đạt Top 10 Nhà Phát Triển Bất Động Sản Uy Tín Hàng Đầu Việt Nam,
+                                    Khẳng Định Vị Thế Trên Thị Trường</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 news-listing__col">
+                    <article class="news-card news-card--lg">
+                        <a href="./chi-tiet-tin.html" class="news-card__media">
+                            <img src="./image/news-grid-3.jpg"
+                                alt="HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương hiệu mạnh"
+                                class="news-card__img img-fluid w-100" loading="lazy">
+                        </a>
+                        <div class="news-card__body">
+                            <div class="news-card__meta">
+                                <span class="news-card__tag">Sự kiện HUDLAND</span>
+                                <span class="news-card__sep" aria-hidden="true">|</span>
+                                <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                            </div>
+                            <h3 class="news-card__title">
+                                <a href="./chi-tiet-tin.html">HUDLAND ghi dấu ấn trong Top 20 Doanh nghiệp phát triển ấn tượng tại Thương
+                                    hiệu mạnh</a>
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <ul class="pagination">
+                <li class="pagination__item pagination__item--control pagination__item--prev">
+                    <a href="javascript:void(0)" class="pagination__link" aria-label="Trang trước">
+                        <i class="fa-solid fa-angles-left"></i>
+                    </a>
+                </li>
+                <li class="pagination__item pagination__item--active">
+                    <a href="javascript:void(0)" class="pagination__link">1</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="javascript:void(0)" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="javascript:void(0)" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item pagination__item--dots">
+                    <span class="pagination__dots">...</span>
+                </li>
+                <li class="pagination__item">
+                    <a href="javascript:void(0)" class="pagination__link">4</a>
+                </li>
+                <li class="pagination__item pagination__item--control pagination__item--next">
+                    <a href="javascript:void(0)" class="pagination__link" aria-label="Trang tiếp">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

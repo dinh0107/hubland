@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quan hệ cổ đông - HUDLAND JSC</title>
+    <meta name="description"
+        content="Thông tin cổ phiếu, thông báo cổ đông, báo cáo tài chính, báo cáo quản trị và báo cáo thường niên của Công ty Cổ phần Đầu tư và Phát triển Bất động sản HUDLAND.">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./component/components.js"></script>
+</head>
+
+<body>
+    <app-header></app-header>
+
+    <div class="page-hero">
+        <img src="./image/banner-quan-he-co-dong.jpg" alt="" class="w-100" fetchpriority="high">
+        <div class="hero-conent">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Quan hệ cổ đông</li>
+                    </ol>
+                </nav>
+                <h1>Quan hệ cổ đông</h1>
+            </div>
+        </div>
+    </div>
+
+    <main class="shareholder-page">
+        <div class="shareholder-tabs-wrapper">
+            <div class="container">
+                <ul class="nav nav-tabs shareholder-tabs" id="shareholderTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="stock-info-tab" data-toggle="tab" href="#stock-info" role="tab"
+                            aria-controls="stock-info" aria-selected="true">Thông tin cổ phiếu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="announcements-tab" data-toggle="tab" href="#announcements" role="tab"
+                            aria-controls="announcements" aria-selected="false">Thông báo cổ đông (10)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="financial-tab" data-toggle="tab" href="#financial" role="tab"
+                            aria-controls="financial" aria-selected="false">Báo cáo tài chính (12)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="governance-tab" data-toggle="tab" href="#governance" role="tab"
+                            aria-controls="governance" aria-selected="false">Báo cáo quản trị (14)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="annual-tab" data-toggle="tab" href="#annual" role="tab"
+                            aria-controls="annual" aria-selected="false">Báo cáo thường niên (15)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="shareholder-main">
+            <div class="container">
+                <div class="tab-content" id="shareholderTabContent">
+                    <div class="tab-pane fade show active" id="stock-info" role="tabpanel"
+                        aria-labelledby="stock-info-tab">
+                        <div class="row row--gap-24 align-items-start">
+                            <div class="col-12 col-lg-4 shareholder-col-side">
+                                <div class="shareholder-stock-card">
+                                    <h2 class="shareholder-stock-title">Thông tin cổ phiếu</h2>
+                                    <div class="shareholder-stock-row">
+                                        <span class="shareholder-stock-code">HLD</span>
+                                        <div class="shareholder-stock-price-group">
+                                            <span class="shareholder-stock-price">13,500.0</span>
+                                            <span class="shareholder-stock-change">+300%</span>
+                                            <span class="shareholder-stock-badge">
+                                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                                    aria-hidden="true">
+                                                    <path d="M1 7L5 3L8 6L13 1" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <span>2,27%</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="shareholder-stock-updated">
+                                        Cập nhật lúc: 16/09/2026 (Giá cuối cùng tính bằng VNĐ)
+                                    </div>
+                                </div>
+
+                                <div class="shareholder-stats-card">
+                                    <div class="shareholder-stat-item">
+                                        <span class="shareholder-stat-label">Vốn điều lệ</span>
+                                        <span class="shareholder-stat-val">~550 tỷ VNĐ</span>
+                                    </div>
+                                    <div class="shareholder-stat-item">
+                                        <span class="shareholder-stat-label">Số lượng cổ phiếu niêm yết</span>
+                                        <span class="shareholder-stat-val">54,999,961 cổ phiếu</span>
+                                    </div>
+                                    <div class="shareholder-stat-item">
+                                        <span class="shareholder-stat-label">Vốn điều lệ</span>
+                                        <span class="shareholder-stat-val">15%/ Năm</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-8 shareholder-col-main">
+                                <div class="shareholder-time-nav">
+                                    <a href="javascript:void(0)" class="shareholder-time-btn" data-time="1m"
+                                        role="button">1 Tháng</a>
+                                    <a href="javascript:void(0)" class="shareholder-time-btn active" data-time="3m"
+                                        role="button">3 Tháng</a>
+                                    <a href="javascript:void(0)" class="shareholder-time-btn" data-time="6m"
+                                        role="button">6 Tháng</a>
+                                    <a href="javascript:void(0)" class="shareholder-time-btn" data-time="1y"
+                                        role="button">1 Năm</a>
+                                </div>
+
+                                <div class="shareholder-chart-card">
+                                    <img src="./image/stock-chart.png" alt="Biểu đồ giá cổ phiếu HLD"
+                                        class="shareholder-chart-img img-fluid w-100" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-related">
+            <div class="container">
+                <h2 class="news-related__title">Tin tức liên quan</h2>
+                <div class="row row--gap-24">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="news-card news-card--lg">
+                            <a href="./chi-tiet-tin.html" class="news-card__media">
+                                <img src="./image/project-news-1.jpg"
+                                    alt="Cập nhật tiến độ Dự án nhà ở hỗn hợp NO-05B(Palm Garden)-KĐTM Việt Hưng- Long Biên- Hà Nội tháng 10/2026"
+                                    class="news-card__img img-fluid w-100" loading="lazy">
+                            </a>
+                            <div class="news-card__body">
+                                <div class="news-card__meta">
+                                    <span class="news-card__tag">Thị trường BDS</span>
+                                    <span class="news-card__sep" aria-hidden="true">|</span>
+                                    <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                                </div>
+                                <h3 class="news-card__title">
+                                    <a href="./chi-tiet-tin.html">Cập nhật tiến độ Dự án nhà ở hỗn hợp NO-05B(Palm
+                                        Garden)-KĐTM Việt Hưng- Long Biên- Hà Nội tháng 10/2026</a>
+                                </h3>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="news-card news-card--lg">
+                            <a href="./chi-tiet-tin.html" class="news-card__media">
+                                <img src="./image/project-news-2.jpg"
+                                    alt="Cập nhật tiến độ Dự án nhà ở hỗn hợp NO-05B(Palm Garden)-KĐTM Việt Hưng- Long Biên- Hà Nội tháng 9/2026"
+                                    class="news-card__img img-fluid w-100" loading="lazy">
+                            </a>
+                            <div class="news-card__body">
+                                <div class="news-card__meta">
+                                    <span class="news-card__tag">Thị trường BDS</span>
+                                    <span class="news-card__sep" aria-hidden="true">|</span>
+                                    <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                                </div>
+                                <h3 class="news-card__title">
+                                    <a href="./chi-tiet-tin.html">Cập nhật tiến độ Dự án nhà ở hỗn hợp NO-05B(Palm
+                                        Garden)-KĐTM Việt Hưng- Long Biên- Hà Nội tháng 9/2026</a>
+                                </h3>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="news-card news-card--lg">
+                            <a href="./chi-tiet-tin.html" class="news-card__media">
+                                <img src="./image/project-news-3.jpg"
+                                    alt="Cập nhật tiến độ Dự án nhà ở hỗn hợp NO-05B(Palm Garden)-KĐTM Việt Hưng- Long Biên- Hà Nội tháng 8/2026"
+                                    class="news-card__img img-fluid w-100" loading="lazy">
+                            </a>
+                            <div class="news-card__body">
+                                <div class="news-card__meta">
+                                    <span class="news-card__tag">Thị trường BDS</span>
+                                    <span class="news-card__sep" aria-hidden="true">|</span>
+                                    <span class="news-card__date">Ngày đăng: 29-09-2026</span>
+                                </div>
+                                <h3 class="news-card__title">
+                                    <a href="./chi-tiet-tin.html">Cập nhật tiến độ Dự án nhà ở hỗn hợp NO-05B(Palm
+                                        Garden)-KĐTM Việt Hưng- Long Biên- Hà Nội tháng 8/2026</a>
+                                </h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <app-footer></app-footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

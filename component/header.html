@@ -1,0 +1,155 @@
+<header class="header" id="header">
+    <div class="container">
+        <div class="row align-items-center header__row">
+            <div class="col-auto header__col-brand">
+                <a href="./" class="header__logo" aria-label="HUDLAND Trang chủ">
+                    <img src="./image/logo.png" alt="HUDLAND JSC Logo" class="img-fluid header__logo-img"
+                        loading="lazy">
+                </a>
+            </div>
+
+            <div class="col d-none d-xl-flex justify-content-end align-items-center header__col-nav">
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item">
+                            <a href="./gioi-thieu.html" class="header__menu-link">GIỚI THIỆU</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./du-an.html" class="header__menu-link">DỰ ÁN</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./linh-vuc-hoat-dong.html" class="header__menu-link">LĨNH VỰC HOẠT ĐỘNG</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./quan-he-co-dong.html" class="header__menu-link">QUAN HỆ CỔ ĐÔNG</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./tin-tuc.html" class="header__menu-link">TIN TỨC</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./tuyen-dung.html" class="header__menu-link">TUYỂN DỤNG</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-auto header__col-actions">
+                <div class="header__actions">
+                    <a href="javascript:void(0)" class="header__btn header__btn--search" id="searchBtn" role="button"
+                        aria-label="Tìm kiếm">
+                        <i class="fa-regular fa-magnifying-glass"></i>
+                    </a>
+
+                    <div class="dropdown header-lang">
+                        <a href="javascript:void(0)" class="header-lang__btn dropdown-toggle" id="langDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="header-lang__flag">
+                                <img src="./image/flag-vn.png" alt="Việt Nam" class="header-lang__flag-img"
+                                    loading="lazy">
+                            </span>
+                            <span class="header-lang__code">VIE</span>
+                            <i class="fa-solid fa-chevron-down header-lang__arrow"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right header-lang__menu" aria-labelledby="langDropdown">
+                            <a class="dropdown-item header-lang__item active" href="?lang=vi">
+                                <span class="header-lang__flag">
+                                    <img src="./image/flag-vn.png" alt="Việt Nam" class="header-lang__flag-img"
+                                        loading="lazy">
+                                </span>
+                                Tiếng Việt (VN)
+                            </a>
+                            <a class="dropdown-item header-lang__item" href="?lang=en">
+                                English (EN)
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="javascript:void(0)" class="header__btn header__btn--menu" id="menuToggleBtn" role="button"
+                        aria-label="Menu">
+                        <span class="header__menu-bars" id="menuToggleBars">
+                            <span class="header__menu-bar header__menu-bar--top"></span>
+                            <span class="header__menu-bar header__menu-bar--middle"></span>
+                            <span class="header__menu-bar header__menu-bar--bottom"></span>
+                        </span>
+                        <span class="header__menu-close" id="menuToggleClose">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-search" id="headerSearch">
+        <div class="container">
+            <div class="header-search__inner">
+                <input type="text" class="header-search__input" placeholder="Nhập từ khóa tìm kiếm..."
+                    aria-label="Tìm kiếm">
+                <a href="javascript:void(0)" class="header-search__close" id="searchCloseBtn" role="button"
+                    aria-label="Đóng tìm kiếm">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+<aside class="sidebar-menu" id="sidebarMenu">
+    <div class="sidebar-menu__header d-xl-none">
+        <a href="./" class="sidebar-menu__logo">
+            <img src="./image/logo.png" alt="HUDLAND JSC Logo" class="img-fluid sidebar-menu__logo-img" loading="lazy">
+        </a>
+        <a href="javascript:void(0)" class="sidebar-menu__close" id="sidebarCloseBtn" role="button"
+            aria-label="Đóng menu">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+    </div>
+
+    <nav class="sidebar-menu__nav">
+        <ul class="sidebar-menu__list">
+            <li class="sidebar-menu__item">
+                <a href="./" class="sidebar-menu__link">
+                    <i class="fa-solid fa-house sidebar-menu__icon"></i>
+                    <span class="sidebar-menu__text">TRANG CHỦ</span>
+                </a>
+            </li>
+            <li class="sidebar-menu__item">
+                <a href="./gioi-thieu.html" class="sidebar-menu__link">
+                    <span class="sidebar-menu__text">GIỚI THIỆU</span>
+                </a>
+            </li>
+            <li class="sidebar-menu__item">
+                <a href="./du-an.html" class="sidebar-menu__link">
+                    <span class="sidebar-menu__text">DỰ ÁN</span>
+                </a>
+            </li>
+            <li class="sidebar-menu__item">
+                <a href="./index.html#activities" class="sidebar-menu__link">
+                    <span class="sidebar-menu__text">LĨNH VỰC HOẠT ĐỘNG</span>
+                </a>
+            </li>
+            <li class="sidebar-menu__item">
+                <a href="./index.html#investors" class="sidebar-menu__link">
+                    <span class="sidebar-menu__text">QUAN HỆ CỔ ĐÔNG</span>
+                </a>
+            </li>
+            <li class="sidebar-menu__item">
+                <a href="./tin-tuc.html" class="sidebar-menu__link">
+                    <span class="sidebar-menu__text">TIN TỨC</span>
+                </a>
+            </li>
+            <li class="sidebar-menu__item">
+                <a href="./tuyen-dung.html" class="sidebar-menu__link">
+                    <span class="sidebar-menu__text">TUYỂN DỤNG</span>
+                </a>
+            </li>
+            <li class="sidebar-menu__item sidebar-menu__item--internal">
+                <a href="./index.html#internal" class="sidebar-menu__link">
+                    <i class="fa-solid fa-user sidebar-menu__icon"></i>
+                    <span class="sidebar-menu__text">KHU VỰC NỘI BỘ</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</aside>

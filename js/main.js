@@ -528,6 +528,19 @@ $(document).ready(function () {
     }
     jQuery('#timelineColumnsTrack').css('transform', 'translateX(' + shiftX + 'px)');
 
+    if (winW < 992 && $col.length) {
+      var trackEl = document.getElementById('timelineColumnsTrack');
+      if (trackEl && trackEl.scrollTo) {
+        var colLeft = $col[0].offsetLeft;
+        var colW2 = $col[0].offsetWidth;
+        var trackW = trackEl.offsetWidth;
+        trackEl.scrollTo({
+          left: colLeft - (trackW / 2) + (colW2 / 2),
+          behavior: 'smooth'
+        });
+      }
+    }
+
     var $bigYear = jQuery('#timelineBigYear');
     $bigYear.addClass('is-updating');
 
@@ -760,6 +773,9 @@ $(document).ready(function () {
     e.preventDefault();
     $('.projects-filter__tab').removeClass('projects-filter__tab--active');
     $(this).addClass('projects-filter__tab--active');
+    if (this.scrollIntoView) {
+      this.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
   });
 
   $('.filter-form__item, .careers-dropdown-item').on('click', function (e) {

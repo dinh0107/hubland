@@ -3,14 +3,14 @@
 <header class="header" id="header">
     <div class="container">
         <div class="row align-items-center header__row">
-            <div class="col-auto header__col-brand">
+            <div class="col-4 col-xl-2 header__col-brand">
                 <a href="./index.html" class="header__logo" aria-label="HUDLAND Trang chủ">
                     <img src="./image/logo.png" alt="HUDLAND JSC Logo" class="img-fluid header__logo-img"
                         loading="lazy">
                 </a>
             </div>
 
-            <div class="col d-none d-xl-flex justify-content-end align-items-center header__col-nav">
+            <div class="col-12 col-xl-8 d-none d-xl-flex justify-content-end align-items-center header__col-nav">
                 <nav class="header__nav">
                     <ul class="header__menu">
                         <li class="header__menu-item">
@@ -35,7 +35,7 @@
                 </nav>
             </div>
 
-            <div class="col-auto header__col-actions">
+            <div class="col-8 col-xl-2 header__col-actions">
                 <div class="header__actions">
                     <a href="javascript:void(0)" class="header__btn header__btn--search" id="searchBtn"
                         role="button" aria-label="Tìm kiếm">

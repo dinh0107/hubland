@@ -41,6 +41,10 @@ $(document).ready(function () {
     closeSidebar();
   });
 
+  $('.sidebar-menu__link').on('click', function () {
+    closeSidebar();
+  });
+
   $(document).on('keydown', function (e) {
     if (e.key === 'Escape') {
       if ($sidebar.hasClass('sidebar-menu--open')) {
@@ -228,7 +232,7 @@ $(document).ready(function () {
 
   startAutoPlay();
 
-  $('.activities-col').on('mouseenter', function () {
+  $('.activities-col').on('mouseenter click', function () {
     const bgIdx = $(this).data('bg-idx');
     $('.activities-col').removeClass('activities-col--active');
     $(this).addClass('activities-col--active');
@@ -369,10 +373,94 @@ $(document).ready(function () {
     });
   }
 
-  $('#documentaryModal').on('hidden.bs.modal', function () {
-    const $iframe = $(this).find('iframe');
-    const src = $iframe.attr('src');
-    $iframe.attr('src', src);
+  function resolveVideoSource(rawUrl) {
+    if (!rawUrl) return { type: 'none', url: '' };
+    const url = String(rawUrl).trim();
+    if (!url) return { type: 'none', url: '' };
+
+    const isDirectVideo = /\.(mp4|webm|ogg|mov|m4v)(\?.*)?$/i.test(url) || url.startsWith('blob:') || url.startsWith('data:video');
+    if (isDirectVideo) {
+      return { type: 'video', url: url };
+    }
+
+    const ytMatch = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i);
+    if (ytMatch && ytMatch[1]) {
+      return { type: 'iframe', url: 'https://www.youtube.com/embed/' + ytMatch[1] + '?autoplay=1&rel=0' };
+    }
+
+    const vimeoMatch = url.match(/(?:vimeo\.com\/)(\d+)/i);
+    if (vimeoMatch && vimeoMatch[1]) {
+      return { type: 'iframe', url: 'https://player.vimeo.com/video/' + vimeoMatch[1] + '?autoplay=1' };
+    }
+
+    let embedUrl = url;
+    if (!/[?&]autoplay=/i.test(embedUrl)) {
+      embedUrl += (embedUrl.indexOf('?') === -1 ? '?' : '&') + 'autoplay=1';
+    }
+    return { type: 'iframe', url: embedUrl };
+  }
+
+  $('#documentaryModal').on('show.bs.modal', function (e) {
+    const $modal = $(this);
+    const triggerSrc = e && e.relatedTarget ? $(e.relatedTarget).attr('data-video-src') : null;
+    const modalSrc = $modal.attr('data-video-src');
+    const $iframe = $modal.find('iframe');
+    const $video = $modal.find('video');
+    const currentSrc = triggerSrc || modalSrc || $iframe.attr('data-src') || $iframe.attr('src') || $video.attr('src') || $video.find('source').attr('src');
+    const resolved = resolveVideoSource(currentSrc);
+
+    if (resolved.type === 'video') {
+      if ($iframe.length) {
+        $iframe.addClass('d-none').attr('src', '');
+      }
+      if ($video.length) {
+        $video.removeClass('d-none');
+        if ($video.attr('src') !== resolved.url) {
+          $video.attr('src', resolved.url);
+          $video.find('source').attr('src', resolved.url);
+          const v = $video[0];
+          if (v && typeof v.load === 'function') {
+            v.load();
+          }
+        }
+        const videoEl = $video[0];
+        if (videoEl && typeof videoEl.play === 'function') {
+          videoEl.currentTime = 0;
+          const playPromise = videoEl.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(function () {});
+          }
+        }
+      }
+    } else if (resolved.type === 'iframe') {
+      if ($video.length) {
+        const videoEl = $video[0];
+        if (videoEl && typeof videoEl.pause === 'function') {
+          videoEl.pause();
+        }
+        $video.addClass('d-none').attr('src', '');
+      }
+      if ($iframe.length) {
+        $iframe.removeClass('d-none').attr('src', resolved.url);
+      }
+    }
+  });
+
+  $('#documentaryModal').on('hide.bs.modal hidden.bs.modal', function () {
+    const $modal = $(this);
+    const $iframe = $modal.find('iframe');
+    const $video = $modal.find('video');
+
+    if ($iframe.length) {
+      $iframe.attr('src', '');
+    }
+    if ($video.length) {
+      const videoEl = $video[0];
+      if (videoEl && typeof videoEl.pause === 'function') {
+        videoEl.pause();
+        videoEl.currentTime = 0;
+      }
+    }
   });
 
   $('.news-nav-btn--next').on('click', function (e) {

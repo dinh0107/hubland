@@ -109,20 +109,50 @@
                             </div>
 
                             <div class="col-12 col-lg-8 shareholder-col-main">
-                                <div class="shareholder-time-nav">
-                                    <a href="javascript:void(0)" class="shareholder-time-btn" data-time="1m"
-                                        role="button">1 Tháng</a>
-                                    <a href="javascript:void(0)" class="shareholder-time-btn active" data-time="3m"
-                                        role="button">3 Tháng</a>
-                                    <a href="javascript:void(0)" class="shareholder-time-btn" data-time="6m"
-                                        role="button">6 Tháng</a>
-                                    <a href="javascript:void(0)" class="shareholder-time-btn" data-time="1y"
-                                        role="button">1 Năm</a>
-                                </div>
-
                                 <div class="shareholder-chart-card">
-                                    <img src="./image/stock-chart.png" alt="Biểu đồ giá cổ phiếu HLD"
-                                        class="shareholder-chart-img img-fluid w-100" loading="lazy">
+                                    <div class="tradingview-widget-container">
+                                        <div class="tradingview-widget-container__widget"></div>
+                                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                                        {
+                                          "symbols": [
+                                            [
+                                              "HUDLAND",
+                                              "HNX:HLD|1D"
+                                            ]
+                                          ],
+                                          "chartOnly": false,
+                                          "width": "100%",
+                                          "height": 450,
+                                          "locale": "vi_VN",
+                                          "colorTheme": "light",
+                                          "autosize": false,
+                                          "showVolume": true,
+                                          "showMA": false,
+                                          "hideDateRanges": false,
+                                          "hideMarketStatus": false,
+                                          "hideSymbolLogo": false,
+                                          "scalePosition": "right",
+                                          "scaleMode": "Normal",
+                                          "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                          "fontSize": "10",
+                                          "noTimeScale": false,
+                                          "valuesTracking": "1",
+                                          "changeMode": "price-and-percent",
+                                          "chartType": "candlesticks",
+                                          "headerFontSize": "medium",
+                                          "lineWidth": 2,
+                                          "lineType": 0,
+                                          "dateRanges": [
+                                            "1d|1",
+                                            "1m|30",
+                                            "3m|60",
+                                            "12m|1D",
+                                            "60m|1W",
+                                            "all|1M"
+                                          ]
+                                        }
+                                        </script>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -9080,12 +9080,16 @@ button:focus {
         padding: 0 16px;
     }
 
+    .filter-form {
+        display: none;
+    }
+
     .news-categories {
-        padding: 48px 0 60px;
+        padding: 48px 0 30px;
     }
 
     .news-listing {
-        padding: 48px 0 60px;
+        padding: 30px 0;
     }
 
     .news-listing__col {

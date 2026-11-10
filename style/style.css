@@ -8483,6 +8483,7 @@ button:focus {
 
     .page-hero img {
         height: 300px;
+        object-fit: cover;
     }
 
     .hero-conent h1 {

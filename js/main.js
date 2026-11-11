@@ -119,7 +119,7 @@ $(document).ready(function () {
     }
     const $currentImgs = $bgContainer.find('.projects-bg__img');
     const newImg = document.createElement('img');
-    newImg.className = 'projects-bg__img projects-bg__img--incoming';
+    newImg.className = 'projects-bg__img img-fluid w-100 projects-bg__img--incoming';
     newImg.src = src;
     newImg.alt = alt;
     $bgContainer.append(newImg);

@@ -69,13 +69,25 @@ $(document).ready(function () {
     $searchBar.removeClass('header-search--open');
   });
 
-  $(window).on('scroll', function () {
-    if ($(this).scrollTop() > 60) {
+  const $backToTopBtn = $('#backToTopBtn');
+
+  function handleScroll() {
+    const st = $(window).scrollTop();
+    if (st > 60) {
       $header.addClass('header--sticky');
     } else {
       $header.removeClass('header--sticky');
     }
-  });
+
+    if (st > 300) {
+      $backToTopBtn.addClass('floating-actions__btn--visible');
+    } else {
+      $backToTopBtn.removeClass('floating-actions__btn--visible');
+    }
+  }
+
+  $(window).on('scroll', handleScroll);
+  handleScroll();
 
   $heroScrollBtn.on('click', function (e) {
     e.preventDefault();
@@ -85,7 +97,7 @@ $(document).ready(function () {
     }, 800);
   });
 
-  $('#backToTopBtn').on('click', function (e) {
+  $backToTopBtn.on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({
       scrollTop: 0

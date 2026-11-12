@@ -8487,7 +8487,7 @@ button:focus {
 
 @media (max-width: 575.98px) {
     .projects-bg__img {
-        height: 100%;
+        height: 500px;
         object-fit: cover;
     }
 
@@ -8850,6 +8850,10 @@ button:focus {
     .projects-meta__value {
         font-size: 10px;
         line-height: 18px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
     .projects-divider {

@@ -1328,7 +1328,7 @@ button:focus {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 30px;
+    padding-top: 100px;
 }
 
 .about-stat {
@@ -6204,6 +6204,10 @@ button:focus {
     .about-content {
         padding-left: 70px;
         padding-right: 32px;
+    }
+
+    .about-stats__row {
+        padding-top: 30px;
     }
 }
 

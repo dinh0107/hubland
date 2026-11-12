@@ -216,7 +216,7 @@ button:focus {
     left: 0;
     padding: 10px 0;
     width: 100%;
-    z-index: 10005;
+    z-index: 99;
     background: transparent;
     border-bottom: 1px solid var(--border-header);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -1320,6 +1320,74 @@ button:focus {
     text-align: right;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.85);
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.loading--hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.loading-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.loading img,
+.loading-logo {
+    width: 380px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px) scale(0.92);
+    animation: loadingLogoIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s forwards;
+}
+
+.loading .loading-title {
+    color: var(--text-main);
+    font-family: var(--font-main);
+    font-size: 56px;
+    font-weight: var(--fw-extrabold);
+    line-height: 1.5;
+    letter-spacing: 5.12px;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(18px);
+    animation: loadingTitleIn 0.65s cubic-bezier(0.2, 0.8, 0.2, 1) 0.7s forwards;
+}
+
+@keyframes loadingLogoIn {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes loadingTitleIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .about-stats__row {
@@ -7739,6 +7807,17 @@ button:focus {
         font-size: 15px;
         line-height: 1.6;
     }
+
+    .loading img,
+    .loading-logo {
+        width: 300px;
+    }
+
+    .loading .loading-title {
+        font-size: 40px;
+        letter-spacing: 4px;
+        margin-top: 16px;
+    }
 }
 
 
@@ -8485,7 +8564,16 @@ button:focus {
         height: 100%;
     }
 
+    .loading img,
+    .loading-logo {
+        width: 240px;
+    }
 
+    .loading .loading-title {
+        font-size: 30px;
+        letter-spacing: 3px;
+        margin-top: 14px;
+    }
 }
 
 
@@ -9926,5 +10014,16 @@ button:focus {
 
     .about-bottom-banner {
         margin-top: 24px;
+    }
+
+    .loading img,
+    .loading-logo {
+        width: 180px;
+    }
+
+    .loading .loading-title {
+        font-size: 22px;
+        letter-spacing: 2px;
+        margin-top: 12px;
     }
 }

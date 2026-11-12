@@ -1,4 +1,21 @@
 $(document).ready(function () {
+  const $pageLoader = $('.loading');
+  if ($pageLoader.length) {
+    function hideLoader() {
+      if (!$pageLoader.length || $pageLoader.hasClass('loading--hidden')) return;
+      $pageLoader.addClass('loading--hidden');
+      setTimeout(function () {
+        $pageLoader.remove();
+      }, 650);
+    }
+
+    $(window).on('load', function () {
+      setTimeout(hideLoader, 1400);
+    });
+
+    setTimeout(hideLoader, 3500);
+  }
+
   const $sidebar = $('#sidebarMenu');
   const $backdrop = $('#sidebarBackdrop');
   const $header = $('#header');

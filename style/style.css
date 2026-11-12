@@ -1890,11 +1890,11 @@ button:focus {
     padding-top: 100px;
 }
 
-.activities-header__container {
+/* .activities-header__container {
     max-width: 1920px;
     padding-left: 120px;
     padding-right: 120px;
-}
+} */
 
 .activities-subhead {
     display: inline-block;
@@ -1934,7 +1934,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 48px 32px;
+    padding: 48px 54px;
     cursor: pointer;
     background-color: transparent;
     transition: background-color 0.4s ease, backdrop-filter 0.4s ease, -webkit-backdrop-filter 0.4s ease;
@@ -3610,7 +3610,7 @@ button:focus {
     background: linear-gradient(180deg, #033F78 0%, #0B4883 100%);
     position: relative;
     overflow: hidden;
-    padding: 100px 0 80px;
+    padding: 100px 0 50px;
 }
 
 .about-vision-watermark {
@@ -6107,7 +6107,7 @@ button:focus {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    padding: 106px 0 80px;
+    padding: 80px 0 80px;
     height: 100%;
 }
 
@@ -6275,7 +6275,7 @@ button:focus {
     }
 
     .about-stats__row {
-        padding-top: 30px;
+        padding-top: 60px;
     }
 }
 

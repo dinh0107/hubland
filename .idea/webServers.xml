@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="77cb5cb2-031a-4938-831a-c1c6539d2167" name="ftp" url="http://103.226.248.65">
+        <fileTransfer rootFolder="/domains/hudland.3sgroup.vn/public_html" host="103.226.248.65" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

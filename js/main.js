@@ -16,6 +16,20 @@ $(document).ready(function () {
     setTimeout(hideLoader, 3500);
   }
 
+  const stockDate = new Date();
+  const stockDay = String(stockDate.getDate()).padStart(2, '0');
+  const stockMonth = String(stockDate.getMonth() + 1).padStart(2, '0');
+  const stockCurrentDate = stockDay + '/' + stockMonth + '/' + stockDate.getFullYear();
+  $('.shareholder-stock-updated, .investors-stock-time').each(function () {
+    const $el = $(this);
+    const $strong = $el.find('strong');
+    if ($strong.length) {
+      $strong.text(stockCurrentDate);
+    } else {
+      $el.text('Cập nhật lúc: ' + stockCurrentDate + ' (Giá cuối cùng tính bằng VNĐ)');
+    }
+  });
+
   const $sidebar = $('#sidebarMenu');
   const $backdrop = $('#sidebarBackdrop');
   const $header = $('#header');

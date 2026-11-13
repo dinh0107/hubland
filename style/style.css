@@ -1355,7 +1355,7 @@ button:focus {
 
 .loading img,
 .loading-logo {
-    width: 280px;
+    width: 250px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -1367,7 +1367,7 @@ button:focus {
 .loading .loading-title {
     color: var(--text-main);
     font-family: var(--font-main);
-    font-size: 46px;
+    font-size: 40px;
     font-weight: var(--fw-extrabold);
     line-height: 1.5;
     letter-spacing: 5.12px;
@@ -4637,7 +4637,7 @@ button:focus {
 }
 
 .news-card--lg .news-card__meta {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     letter-spacing: -0.16px;
     gap: 12px;
@@ -4753,18 +4753,20 @@ button:focus {
     align-items: center;
     gap: 10px;
 }
-
+.job-sidebar-card li{
+    font-size:14px;
+}
 .other-projects__btn,
 .other-jobs__btn {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background-color: var(--bg-white);
     border: 1px solid var(--btn-arrow-border);
     color: var(--text-dark);
-    font-size: 20px;
+    font-size: 14px;
     text-decoration: none;
     transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
 }
@@ -4853,7 +4855,7 @@ button:focus {
 
 .news-category-card__text {
     font-family: var(--font-main);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: var(--fw-semibold);
     line-height: 28px;
     letter-spacing: -0.29px;
@@ -5054,15 +5056,15 @@ button:focus {
 }
 
 .pagination__link {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background-color: var(--bg-input);
     color: var(--text-navy);
     font-family: var(--font-main);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: var(--fw-bold);
     text-decoration: none;
     transition: all 0.2s ease;
@@ -5375,7 +5377,7 @@ button:focus {
 
 .career-card__title {
     font-family: var(--font-main);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: var(--fw-bold);
     line-height: 26px;
     color: var(--text-dark);
@@ -5509,7 +5511,7 @@ button:focus {
 
 .culture-desc {
     font-family: var(--font-main);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: var(--fw-medium);
     line-height: 1.6;
     letter-spacing: -0.16px;
@@ -5551,7 +5553,7 @@ button:focus {
 
 .training-item__title {
     font-family: var(--font-main);
-    font-size: 28px;
+    font-size: 20px;
     font-weight: var(--fw-semibold);
     line-height: 1.3;
     color: var(--text-dark);
@@ -5565,7 +5567,7 @@ button:focus {
 
 .training-item__desc {
     font-family: var(--font-main);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: var(--fw-medium);
     line-height: 1.6;
     letter-spacing: -0.16px;
@@ -5589,7 +5591,7 @@ button:focus {
 
 .job-detail__title {
     font-family: var(--font-main);
-    font-size: 40px;
+    font-size: 30px;
     font-weight: var(--fw-bold);
     line-height: 1.3;
     letter-spacing: -0.4px;
@@ -5643,7 +5645,7 @@ button:focus {
 
 .job-meta-val {
     font-family: var(--font-main);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: var(--fw-semibold);
     color: var(--text-dark);
 }
@@ -5654,7 +5656,7 @@ button:focus {
 
 .job-section-title {
     font-family: var(--font-main);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: var(--fw-bold);
     line-height: 1.3;
     letter-spacing: -0.2px;
@@ -5674,7 +5676,7 @@ button:focus {
 
 .job-list li {
     font-family: var(--font-main);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: var(--fw-medium);
     line-height: 1.6;
     letter-spacing: -0.16px;
@@ -5723,7 +5725,7 @@ button:focus {
 .job-apply-subtitle {
     display: block;
     font-family: var(--font-main);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: var(--fw-medium);
     color: var(--text-dark);
     opacity: 0.8;
@@ -5744,7 +5746,7 @@ button:focus {
 
 .job-apply-method__desc {
     font-family: var(--font-main);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: var(--fw-medium);
     line-height: 1.6;
     color: var(--text-dark);

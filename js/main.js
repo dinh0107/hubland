@@ -138,6 +138,18 @@ $(document).ready(function () {
   const $playBtn = $('#projectsPlayBtn');
   const $playIcon = $('#projectsPlayIcon');
   const $thumbs = $('.projects-thumb');
+  const $bgContainer = $('.projects-bg');
+  const $bgBase = $bgContainer.find('.projects-bg__img').first();
+  let $bgWipe = $bgContainer.find('.projects-bg__img--slide');
+  if (!$bgWipe.length) {
+    $bgWipe = $bgContainer.find('.projects-bg__img').eq(1);
+  }
+  if (!$bgWipe.length && $bgBase.length) {
+    $bgWipe = $('<img class="projects-bg__img projects-bg__img--slide img-fluid w-100" loading="lazy">');
+    $bgWipe.attr('src', $bgBase.attr('src')).attr('alt', $bgBase.attr('alt'));
+    $bgContainer.append($bgWipe);
+  }
+  $bgWipe.addClass('projects-bg__img--slide');
   let bgTransitionTimeout = null;
 
   $thumbs.each(function () {
@@ -149,37 +161,33 @@ $(document).ready(function () {
   });
 
   function switchBgImage(src, alt) {
-    const $bgContainer = $('.projects-bg');
+    if (!$bgBase.length || !$bgWipe.length) return;
+    if ($bgBase.attr('src') === src && !$bgWipe.hasClass('projects-bg__img--wiping')) return;
+
     if (bgTransitionTimeout) {
       clearTimeout(bgTransitionTimeout);
-      $bgContainer.find('.projects-bg__img:not(:last-child)').remove();
-    }
-    const $currentImgs = $bgContainer.find('.projects-bg__img');
-    const newImg = document.createElement('img');
-    newImg.className = 'projects-bg__img img-fluid w-100 projects-bg__img--incoming';
-    newImg.alt = alt;
-
-    let hasStarted = false;
-    function triggerSlide() {
-      if (hasStarted) return;
-      hasStarted = true;
-      $bgContainer.append(newImg);
-      void newImg.offsetWidth;
-      newImg.classList.add('projects-bg__img--active');
-
-      bgTransitionTimeout = setTimeout(function () {
-        $currentImgs.remove();
-        newImg.classList.remove('projects-bg__img--incoming', 'projects-bg__img--active');
-        bgTransitionTimeout = null;
-      }, 950);
+      $bgBase.attr('src', $bgWipe.attr('src')).attr('alt', $bgWipe.attr('alt'));
     }
 
-    newImg.onload = triggerSlide;
-    newImg.onerror = triggerSlide;
-    newImg.src = src;
-    if (newImg.complete) {
-      triggerSlide();
-    }
+    $bgWipe.addClass('projects-bg__img--reset')
+      .removeClass('projects-bg__img--wiping')
+      .attr('src', src)
+      .attr('alt', alt);
+    void $bgWipe[0].offsetWidth;
+    $bgWipe.removeClass('projects-bg__img--reset');
+
+    requestAnimationFrame(function () {
+      $bgWipe.addClass('projects-bg__img--wiping');
+    });
+
+    bgTransitionTimeout = setTimeout(function () {
+      $bgBase.attr('src', src).attr('alt', alt);
+      $bgWipe.addClass('projects-bg__img--reset')
+        .removeClass('projects-bg__img--wiping');
+      void $bgWipe[0].offsetWidth;
+      $bgWipe.removeClass('projects-bg__img--reset');
+      bgTransitionTimeout = null;
+    }, 940);
   }
 
   function updateProject(index) {

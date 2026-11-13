@@ -1547,12 +1547,28 @@ button:focus {
     min-width: 0;
     height: 100%;
     z-index: 1;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
-.projects-bg__img--fade {
-    opacity: 0;
+.projects-bg__img--slide {
+    z-index: 2;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    transition: clip-path 0.9s cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: clip-path;
+}
+
+.projects-bg__img--slide.projects-bg__img--wiping {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.projects-bg__img--reset {
+    transition: none !important;
+    -webkit-transition: none !important;
 }
 
 .projects-overlay {

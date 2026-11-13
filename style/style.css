@@ -2393,7 +2393,6 @@ button:focus {
     padding: 24px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 24px;
     flex: 1;
 }
@@ -2505,7 +2504,7 @@ button:focus {
 
 .investors-docs-list {
     max-height: 440px;
-    height: 290px;
+    height: 250px;
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;

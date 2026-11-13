@@ -140,6 +140,14 @@ $(document).ready(function () {
   const $thumbs = $('.projects-thumb');
   let bgTransitionTimeout = null;
 
+  $thumbs.each(function () {
+    const bg = $(this).attr('data-bg');
+    if (bg) {
+      const img = new Image();
+      img.src = bg;
+    }
+  });
+
   function switchBgImage(src, alt) {
     const $bgContainer = $('.projects-bg');
     if (bgTransitionTimeout) {
@@ -149,18 +157,29 @@ $(document).ready(function () {
     const $currentImgs = $bgContainer.find('.projects-bg__img');
     const newImg = document.createElement('img');
     newImg.className = 'projects-bg__img img-fluid w-100 projects-bg__img--incoming';
-    newImg.src = src;
     newImg.alt = alt;
-    $bgContainer.append(newImg);
 
-    void newImg.offsetWidth;
-    newImg.classList.add('projects-bg__img--active');
+    let hasStarted = false;
+    function triggerSlide() {
+      if (hasStarted) return;
+      hasStarted = true;
+      $bgContainer.append(newImg);
+      void newImg.offsetWidth;
+      newImg.classList.add('projects-bg__img--active');
 
-    bgTransitionTimeout = setTimeout(function () {
-      $currentImgs.remove();
-      $(newImg).removeClass('projects-bg__img--incoming projects-bg__img--active');
-      bgTransitionTimeout = null;
-    }, 950);
+      bgTransitionTimeout = setTimeout(function () {
+        $currentImgs.remove();
+        newImg.classList.remove('projects-bg__img--incoming', 'projects-bg__img--active');
+        bgTransitionTimeout = null;
+      }, 950);
+    }
+
+    newImg.onload = triggerSlide;
+    newImg.onerror = triggerSlide;
+    newImg.src = src;
+    if (newImg.complete) {
+      triggerSlide();
+    }
   }
 
   function updateProject(index) {

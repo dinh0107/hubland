@@ -30,6 +30,53 @@ $(document).ready(function () {
     }
   });
 
+  const $tvWidget = $('.tradingview-widget-container__widget');
+  if ($tvWidget.length) {
+    const tvScript = document.createElement('script');
+    tvScript.type = 'text/javascript';
+    tvScript.src = 'https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js';
+    tvScript.async = true;
+    tvScript.innerHTML = JSON.stringify({
+      symbols: [
+        [
+          'HUDLAND',
+          'HNX:HLD|1D'
+        ]
+      ],
+      chartOnly: false,
+      width: '100%',
+      height: 450,
+      locale: 'vi_VN',
+      colorTheme: 'light',
+      autosize: false,
+      showVolume: true,
+      showMA: true,
+      hideDateRanges: false,
+      hideMarketStatus: false,
+      hideSymbolLogo: false,
+      scalePosition: 'right',
+      scaleMode: 'Normal',
+      fontFamily: '-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif',
+      fontSize: '10',
+      noTimeScale: false,
+      valuesTracking: '1',
+      changeMode: 'price-and-percent',
+      chartType: 'candlesticks',
+      headerFontSize: 'medium',
+      lineWidth: 2,
+      lineType: 0,
+      dateRanges: [
+        '1d|1',
+        '1m|30',
+        '3m|60',
+        '12m|1D',
+        '60m|1W',
+        'all|1M'
+      ]
+    });
+    $tvWidget[0].parentNode.appendChild(tvScript);
+  }
+
   const $sidebar = $('#sidebarMenu');
   const $backdrop = $('#sidebarBackdrop');
   const $header = $('#header');

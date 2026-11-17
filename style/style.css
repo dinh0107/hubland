@@ -327,9 +327,25 @@ button:focus {
 }
 
 .header--sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
     background-color: rgba(0, 32, 64, 0.95);
     backdrop-filter: blur(12px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: headerStickyIn 0.35s ease;
+}
+
+@keyframes headerStickyIn {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .header__container {
@@ -8055,6 +8071,10 @@ button:focus {
         position: fixed;
         z-index: 999;
         height: 64px;
+    }
+
+    .header--sticky {
+        animation: none;
     }
 
     .header__container {

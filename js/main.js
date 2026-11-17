@@ -151,7 +151,7 @@ $(document).ready(function () {
 
   function handleScroll() {
     const st = $(window).scrollTop();
-    if (st > 60) {
+    if (st >= 200) {
       $header.addClass('header--sticky');
     } else {
       $header.removeClass('header--sticky');

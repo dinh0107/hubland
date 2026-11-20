@@ -38,24 +38,24 @@
     <main class="shareholder-page">
         <div class="shareholder-tabs-wrapper">
             <div class="container">
-                <ul class="nav nav-tabs shareholder-tabs" id="shareholderTabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="stock-info-tab" data-toggle="tab" href="#stock-info" role="tab"
-                            aria-controls="stock-info" aria-selected="true">Thông tin cổ phiếu</a>
+                <ul class="nav nav-tabs nav-fill shareholder-tabs" id="shareholderTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="stock-info-tab" data-toggle="tab" href="#stock-info" role="tab"
+                            aria-controls="stock-info" aria-selected="false">Thông tin cổ phiếu</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="announcements-tab" data-toggle="tab" href="#announcements" role="tab"
-                            aria-controls="announcements" aria-selected="false">Thông báo cổ đông (10)</a>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="announcements-tab" data-toggle="tab" href="#announcements"
+                            role="tab" aria-controls="announcements" aria-selected="true">Thông báo cổ đông (10)</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" role="presentation">
                         <a class="nav-link" id="financial-tab" data-toggle="tab" href="#financial" role="tab"
                             aria-controls="financial" aria-selected="false">Báo cáo tài chính (12)</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" role="presentation">
                         <a class="nav-link" id="governance-tab" data-toggle="tab" href="#governance" role="tab"
                             aria-controls="governance" aria-selected="false">Báo cáo quản trị (14)</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" role="presentation">
                         <a class="nav-link" id="annual-tab" data-toggle="tab" href="#annual" role="tab"
                             aria-controls="annual" aria-selected="false">Báo cáo thường niên (15)</a>
                     </li>
@@ -66,7 +66,7 @@
         <div class="shareholder-main">
             <div class="container">
                 <div class="tab-content" id="shareholderTabContent">
-                    <div class="tab-pane fade show active" id="stock-info" role="tabpanel"
+                    <div class="tab-pane fade" id="stock-info" role="tabpanel"
                         aria-labelledby="stock-info-tab">
                         <div class="row row--gap-24 align-items-start">
                             <div class="col-12 col-lg-4 shareholder-col-side">
@@ -113,6 +113,271 @@
                                     <div class="tradingview-widget-container">
                                         <div class="tradingview-widget-container__widget"></div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade show active" id="announcements" role="tabpanel"
+                        aria-labelledby="announcements-tab">
+                        <div class="shareholder-docs">
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Thông báo về việc đăng ký và nộp tiền mua cổ phiếu phát hành thêm năm 2026</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 10:45 07-09-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download">
+                                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                                        <span>Tải xuống</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Công bố thông tin định kỳ 6 tháng đầu năm 2026</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 10:45 07-09-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download">
+                                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                                        <span>Tải xuống</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Tài liệu lấy ý kiến cổ đông bằng văn bản về việc điều chỉnh ngành, nghề kinh doanh</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 10:45 07-09-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download">
+                                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                                        <span>Tải xuống</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Tài liệu lấy ý kiến cổ đông bằng văn bản về việc điều chỉnh ngành, nghề kinh doanh</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 10:45 07-09-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download">
+                                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                                        <span>Tải xuống</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Tài liệu lấy ý kiến cổ đông bằng văn bản về việc điều chỉnh ngành, nghề kinh doanh</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 10:45 07-09-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download">
+                                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                                        <span>Tải xuống</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Tài liệu lấy ý kiến cổ đông bằng văn bản về việc điều chỉnh ngành, nghề kinh doanh</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 10:45 07-09-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download">
+                                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                                        <span>Tải xuống</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Tài liệu lấy ý kiến cổ đông bằng văn bản về việc điều chỉnh ngành, nghề kinh doanh</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 10:45 07-09-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download">
+                                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                                        <span>Tải xuống</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Tài liệu lấy ý kiến cổ đông bằng văn bản về việc điều chỉnh ngành, nghề kinh doanh</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 10:45 07-09-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download">
+                                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                                        <span>Tải xuống</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Tài liệu lấy ý kiến cổ đông bằng văn bản về việc điều chỉnh ngành, nghề kinh doanh</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 10:45 07-09-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download">
+                                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                                        <span>Tải xuống</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="pagination pagination--docs">
+                            <li class="pagination__item pagination__item--control pagination__item--prev">
+                                <a href="javascript:void(0)" class="pagination__link" aria-label="Trang trước">
+                                    <i class="fa-solid fa-angles-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination__item pagination__item--active">
+                                <a href="javascript:void(0)" class="pagination__link">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="javascript:void(0)" class="pagination__link">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="javascript:void(0)" class="pagination__link">3</a>
+                            </li>
+                            <li class="pagination__item pagination__item--dots">
+                                <span class="pagination__dots">...</span>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="javascript:void(0)" class="pagination__link">4</a>
+                            </li>
+                            <li class="pagination__item pagination__item--control pagination__item--next">
+                                <a href="javascript:void(0)" class="pagination__link" aria-label="Trang tiếp">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane fade" id="financial" role="tabpanel" aria-labelledby="financial-tab">
+                        <div class="shareholder-docs">
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Báo cáo tài chính bán niên năm 2026 đã được soát xét</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 08:30 15-08-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Tải xuống</span></a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Báo cáo tài chính quý II năm 2026</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 15:00 20-07-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Tải xuống</span></a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Báo cáo tài chính quý I năm 2026</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 11:20 18-04-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Tải xuống</span></a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Báo cáo tài chính kiểm toán năm 2025</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 16:45 30-03-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Tải xuống</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="governance" role="tabpanel" aria-labelledby="governance-tab">
+                        <div class="shareholder-docs">
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Báo cáo tình hình quản trị công ty 6 tháng đầu năm 2026</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 09:15 28-07-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Tải xuống</span></a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Báo cáo tình hình quản trị công ty năm 2025</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 14:00 25-01-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Tải xuống</span></a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Quy chế nội bộ về quản trị công ty HUDLAND</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 10:00 12-05-2025</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Tải xuống</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="annual" role="tabpanel" aria-labelledby="annual-tab">
+                        <div class="shareholder-docs">
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Báo cáo thường niên năm 2025 - Vững vàng nội lực, kiến tạo tương lai</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 15:30 15-04-2026</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Tải xuống</span></a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Báo cáo thường niên năm 2024</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 10:15 12-04-2025</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Tải xuống</span></a>
+                                </div>
+                            </div>
+                            <div class="shareholder-doc">
+                                <span class="shareholder-doc__icon" aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></span>
+                                <div class="shareholder-doc__main">
+                                    <div class="shareholder-doc__text">
+                                        <span class="shareholder-doc__title">Báo cáo thường niên năm 2023</span>
+                                        <span class="shareholder-doc__date">Ngày công bố: 09:40 18-04-2024</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="shareholder-doc__download"><i class="fa-solid fa-download" aria-hidden="true"></i><span>Tải xuống</span></a>
                                 </div>
                             </div>
                         </div>
